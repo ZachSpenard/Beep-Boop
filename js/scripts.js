@@ -10,7 +10,7 @@ function checkInput(numInput){
 function loopThroughInput(nameInput, numInput) {
   var outputArray = [];
   for (var i = 0; i <= 1; i++){
-    if (numInput % 3 == 0 && numInput > 0) {
+    if (numInput  % 3 == 0 && numInput > 0) {
       outputArray.push("I'm sorry, " + nameInput + ".  I'm afraid I can't do that.");
     }
     else if (numInput.toString().includes("1")) {
@@ -24,6 +24,9 @@ function loopThroughInput(nameInput, numInput) {
     }
   }
   return outputArray;
+  function reverseString(str) {
+  return (str === '') ? '' : reverseString(str.substr(1)) + str.charAt(0);
+}
 }
 //User Interface Logic
 $(document).ready(function(){
@@ -31,9 +34,8 @@ $(document).ready(function(){
     event.preventDefault();
     var nameInput = ($("#nameInput").val());
     var numInput = ($("#numInput").val());
-    console.log(nameInput,numInput)
+    // console.log(nameInput,numInput)
     output = loopThroughInput(nameInput, numInput);
-    $("#arrayElement").attr("placeholder", "Enter a number").val("");
     $("#outPut").text(output[0]);
   });
 });

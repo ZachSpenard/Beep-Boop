@@ -1,6 +1,12 @@
 h2 {
   color: #f72413;
+  text-align: center;
 }
 body {
-    background-color: #0b9167;
+    background-color: #0746c4;
+    text-align: center;
+}
+.jumbotron {
+  color: #0a97d3;
+  background-color:#00449e
 }

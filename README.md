@@ -11,7 +11,9 @@ Numbers that contain a 1 are replaced (all digits) with "Boop!"
 Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."
 
 ## Setup/Installation Requirements
+run "git clone https://github.com/ZachSpenard/Beep-Boop.git" in target directory.
 
+gh-pages https://Zachspenard/.github.io/Beep-Boop
 ## Known Bugs
 
 N/A
